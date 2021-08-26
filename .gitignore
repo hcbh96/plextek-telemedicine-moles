@@ -130,3 +130,5 @@ dmypy.json
 
 # Large video files should not be commited
 .mp4
+.jpg
+.jpeg
