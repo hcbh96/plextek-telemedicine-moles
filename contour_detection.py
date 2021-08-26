@@ -24,8 +24,6 @@ while i <= 100:
         lines = cv2.HoughLinesP(edges, 1, np.pi/180, 60, np.array([]), 50, 5)
 
 
-
-
         for line in lines:
             for x1, y1, x2, y2 in line:
                 print(x1, y1, x2, y2)
