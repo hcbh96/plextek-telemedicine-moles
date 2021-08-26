@@ -7,6 +7,8 @@ Created on Thu Aug 26 10:35:42 2021
 
 import numpy as np
 import cv2
+from random import random, seed
+seed(1)
 
 def detect_shape(img):
 #    img = cv2.imread('shapes.png')
@@ -47,7 +49,9 @@ def detect_shape(img):
 
     #
     if shapeDetected:
-        final_img = cv2.imwrite("img {}".format(np.random()), img)
+        filename = "img {}".format(random())
+        print(filename)
+        final_img = cv2.imwrite(filename, img)
         print("Beep")
 
 
